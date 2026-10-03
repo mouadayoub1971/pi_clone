@@ -1,5 +1,5 @@
 {
-  "name": "pi_clone",
+  "name": "pi-monorepo",
   "version": "1.0.0",
   "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI &amp; web UI libraries, Slack bot, vLLM pods",
   "main": "index.js",

@@ -1,17 +1,49 @@
 {
   "name": "@mouad_works/pi-ai",
   "version": "0.0.1",
-  "description": "",
+  "description": "Unified LLM API with automatic model discorvery and provider configuration",
   "main": "./dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "types": "./dist/index.d.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.ts",
+      "import": "./dist/index.d.ts"
+    }
   },
-  "keywords": [],
-  "author": "",
+  "bin": {
+    "pi-ai": "cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+  "clean": "shx rm -rf dist",
+  "test": "vitest --run"
+  },
+  "keywords": [
+    "ai",
+    "llm",
+    "openai",
+    "anthropic",
+    "gemini",
+    "bedrock",
+    "unified",
+    "api"
+  ],
+  "author": "Mouad Ayoub",
   "license": "MIT",
   "type": "module",
-  "types": "./dist/index.d.ts",
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mouadayoub1971/pi_clone.git",
+      "directory": "packages/ai"
+  },
+  "engines": {
+      "node": ">=22.19.0"  
+  },
   "dependencies": {
+    "openai": "^7.15.0",
     "typebox": "^1.1.38"
   }
 }
