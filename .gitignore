@@ -222,3 +222,5 @@ __marimo__/
 docs/
 
 node_modules/
+.DS_Store
+**/.DS_Store
